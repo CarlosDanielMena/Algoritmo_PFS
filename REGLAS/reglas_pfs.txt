@@ -1,0 +1,48 @@
+#############################################################################################
+#Algoritmo PFS provide functions to implement the PFS and the PFS-US algorithms
+
+#Copyright 2017 Carlos Daniel Hernandez Mena 
+#Contact: carlos.mena@ciempiess.org
+
+#This file is part of Algoritmo PFS
+
+#    Algoritmo PFS is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+#    Algoritmo PFS is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+
+#    You should have received a copy of the GNU General Public License
+#    along with Algoritmo PFS.  If not, see <http://www.gnu.org/licenses/>.
+#############################################################################################
+#ARCHIVO DE REGLAS
+
+#NOTAS: 
+#- Toda linea de este archivo que empiece con # es comentario 
+#y no se toma en cuenta
+#- Es preciso que estas reglas se hagan en base a la transcripcion
+#fonologica de la palabra.
+#- El primer simbolo de cada regla debe ser un simbolo unico, 
+#por ejemplo : un solo digito del 1 al 9, pero jamas algo como "12" o "13"
+#- Los demas elementos si pueden tener multiples simbolos como "tS"
+#- Cada elemento de una regla debe estar separado por un unico espacio
+#en blanco y no debe de haber ningun espacio en blanco al final del renglon.
+#Hay que recordar que las reglas son solo sustituciones y por eso hay que tener
+#en cuenta el orden de cada sustitucion para que no haya contradicciones.
+#por ejemplo, se debe evitar que en una regla se cambie la "b" por "1"
+#y luego en una regla posterior se cambie el "1" por "@". Es decir
+#no debe olvidarse la coherencia al aplicar las reglas en conjunto.
+
+1 p b
+2 t d
+3 k g
+4 tS S
+5 Z n~
+6 m n
+7 r( l
+8 f x
+9 a e i o u
